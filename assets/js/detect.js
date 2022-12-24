@@ -38,7 +38,6 @@ img.addEventListener('mousemove', function(e) {
         y = e.layerY
     }
     useCanvas(canvas, img, function() {
-        data
         var p = canvas.getContext('2d')
         .getImageData(x, y, 1, 1).data
         // show preview
