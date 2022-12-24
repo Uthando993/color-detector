@@ -1,0 +1,93 @@
+*,*:after,*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Courier;
+    font-weight: bold;
+}
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #0d1017;
+}
+.pic {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 5px solid #4c8eda;
+    background-image: url('/assets/images/blank.png');
+    align-items: center;
+}
+.pic img {
+    display: block;
+    height: 100%;
+    cursor: crosshair;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.result {
+    position: fixed;
+    top: 60%;
+    left: 10%;
+    right: 10%;
+    background: #fff;
+    background: rgba(205, 205, 205, 0.3);
+    color: #4c8eda;
+    margin: 0;
+    padding: 40px;
+    display: block;
+}
+.result span {
+    display: block;
+    font-size: 33px;
+}
+.preview {
+    position: absolute;
+    top: -0.5px;
+    right: 0px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #4c8eda;
+    border-right: none;
+    border-top: none;
+}
+#cs {
+    display: none;
+}
+@media (min-width:768px) {
+    .pic {
+        width: 80%;
+    }
+}
+@media (min-width:1024px) {
+    .pic {
+        width: 60%;
+    }
+}
+.file {
+    text-align: center;
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    background-color: #fff;
+    padding: 15px;
+    color: #4c8eda;
+    border: 5px solid #4c8eda;
+    border-radius: 10px;
+    font-size: 40px;
+}
