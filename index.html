@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Picker Tool</title>
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+        <script src="jquery-3.6.1.min.js"></script>
+    </head>
+    <body>
+        <div class="pic">
+            <div class="preview"></div>
+            <img id="image" />
+        </div>
+        <div class="result">
+            <span>HEX: #0d1017</span>
+            <span>RGB: rgb(13,16,23)</span>
+        </div>
+
+        <input type="file" id="file" accept="image/jpeg, image/png, image/jpg" hidden />
+        <label for="file" class="file">Choose Image</label>
+        <canvas id="cs"></canvas>
+    </body>
+    <script src="assets/js/upload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/detect.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        function checkOrientation() {
+        var winWidth = $(window).width()
+        var winHeight = $(window).height()
+
+        if (winHeight > winWidth) {
+            $('body').width(winHeight).height(winWidth)
+            }
+        }
+        checkOrientation()
+        var resizeEnd
+        $(window).resize(function(){ 
+           clearTimeout(resizeEnd)
+           resizeEnd = setTimeout(checkOrientation, 100)
+        })
+    </script>
+</html>
