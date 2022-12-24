@@ -24,7 +24,6 @@ body {
     margin: 0 auto;
     margin-top: 10%;
     border: 5px solid #4c8eda;
-    background-image: url('assets/images/blank.png');
     background-repeat: 'repeat-x';
 }
 .pic img {
@@ -32,6 +31,7 @@ body {
     height: 100%;
     cursor: crosshair;
     overflow: hidden;
+    background-image: url('assets/images/blank.png');
     margin: 0 auto;
 }
 .result {
