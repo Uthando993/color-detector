@@ -30,7 +30,7 @@ body {
     margin: 0 auto;
     margin-top: 10%;
     border: 5px solid #4c8eda;
-    background: url('https://uthando993.github.io/color-detector/assets/blank.png') no-repeat center center fixed; 
+    background: url('https://uthando993.github.io/color-detector/assets/blank.png'); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
