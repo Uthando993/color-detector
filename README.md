@@ -1,4 +1,4 @@
-# Color Detector
+# Color Detector [UI Under Development]
 It's a project which detect the color from any image.  
 Currently this project is **not viewable for landscape orientation** because I haven't added landscape orientation style for tags as I'm making this code on mobile.  
 Stay tuned for the upcoming updates!
