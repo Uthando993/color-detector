@@ -25,13 +25,13 @@ body {
     margin-top: 10%;
     border: 5px solid #4c8eda;
     background-repeat: 'repeat-x';
+    background-image: url('assets/images/blank.png');
 }
 .pic img {
     display: block;
     height: 100%;
     cursor: crosshair;
     overflow: hidden;
-    background-image: url('assets/images/blank.png');
     margin: 0 auto;
 }
 .result {
