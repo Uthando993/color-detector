@@ -22,23 +22,4 @@
     </body>
     <script src="assets/js/upload.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/detect.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" charset="utf-8">
-        var body = $body.html()
-        function checkOrientation() {
-            var winWidth = $(window).width()
-            var winHeight = $(window).height()
-
-            if (winHeight > winWidth) {
-                $('body').replaceWith($("<h1 style=\"text-align:center;\">This page is currently supported in portrait orientation only</h1>)) 
-            } else {
-                $('body').replaceWith($(body)) 
-            }
-        }
-        checkOrientation()
-        var resizeEnd
-        $(window).resize(function(){ 
-           clearTimeout(resizeEnd)
-           resizeEnd = setTimeout(checkOrientation, 100)
-        })
-    </script>
 </html>
