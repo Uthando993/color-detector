@@ -1,3 +1,9 @@
+@media screen and (orientation: landscape) {
+    html {
+        content-visibility: hidden;
+        background: #0d1017;
+    }
+}/*Currently I'm working from mobile so I'm not able to make proper landscape arrangements*/
 *,*:after,*:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
