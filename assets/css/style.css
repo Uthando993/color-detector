@@ -30,11 +30,12 @@ body {
     margin: 0 auto;
     margin-top: 10%;
     border: 5px solid #4c8eda;
-    background-image: url('assets/blank.png'); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: repeating-linear-gradient( 
+
+                    0deg, #000 0, #000 40px,  
+
+                    #fff 40px, #fff 80px); 
+background-size: cover;
 }
 .pic img {
     display: block;
@@ -49,7 +50,7 @@ body {
     left: 10%;
     right: 10%;
     background: #fff;
-    background: rgba(205, 205, 205, 0.3);
+    background: rgba(205, 205, 205,   0.3);
     color: #4c8eda;
     margin: 0;
     padding: 40px;
