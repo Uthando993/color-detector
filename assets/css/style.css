@@ -1,9 +1,3 @@
-@media screen and (orientation: landscape) {
-    html {
-        content-visibility: hidden;
-        background: #0d1017;
-    }
-}/*Currently I'm working from mobile so I'm not able to make proper landscape arrangements*/
 *,*:after,*:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -21,43 +15,37 @@ body {
     position: relative;
     background: #0d1017;
 }
+div,span,label {
+}
 .pic {
-    position: relative;
     display: block;
-    width: 90%;
-    height: 40%;
+    position: relative;
     overflow: hidden;
-    margin: 0 auto;
-    margin-top: 10%;
     border: 5px solid #4c8eda;
+    margin: 0 auto;
 }
 .pic img {
-    display: block;
     height: 100%;
     cursor: crosshair;
     overflow: hidden;
     margin: 0 auto;
 }
 .result {
+    display: block;
     position: fixed;
-    top: 60%;
-    left: 10%;
-    right: 10%;
-    background: #fff;
     background: rgba(205, 205, 205, 0.3);
     color: #4c8eda;
-    margin: 0;
-    padding: 40px;
-    display: block;
+    padding: 4%;
 }
 .result span {
     display: block;
     font-size: 33px;
 }
 .preview {
+    display: block;
     position: absolute;
-    top: -0.5px;
-    right: 0px;
+    top: 0%;
+    right: 0%;
     display: block;
     margin: 0;
     padding: 0;
@@ -70,28 +58,55 @@ body {
 #cs {
     display: none;
 }
-@media (min-width:768px) {
-    .pic {
-        width: 80%;
-    }
-}
-@media (min-width:1024px) {
-    .pic {
-        width: 60%;
-    }
-}
 .file {
-    text-align: center;
-    position: fixed;
     display: block;
-    margin: 0 auto;
-    top: 50%;
-    left: 10%;
-    right: 10%;
+    position: fixed;
+    text-align: center;
     background-color: #fff;
     padding: 15px;
     color: #4c8eda;
     border: 5px solid #4c8eda;
     border-radius: 10px;
     font-size: 40px;
+}
+@media screen and (orientation:portrait){
+    .pic {
+        margin-top: 20%;
+        margin-right: 10%;
+        margin-left: 10%;
+        height: 40%;
+    }
+    .result {
+        bottom: 15%;
+        left: 10%;
+        right: 10%;
+    }
+    .file {
+        bottom: 35%;
+        left: 10%;
+        right: 10%;
+    }
+}
+@media screen and (orientation:landscape) {
+    .pic {
+        margin-right: 100%;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 45%;
+        height: 80%;
+    }
+    .result {
+        font-size: 15px;
+        left: 55%;
+        right: 0%;
+        bottom: 9%;
+        width: 40%;
+    }
+    .file {
+        left: 55%;
+        right: 0%;
+        top: 10%;
+        width: 40%;
+    }
 }
