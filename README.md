@@ -1,4 +1,4 @@
-# Color Detector [UI Under Development]
+# Color Detector
 It's a project which detect the color from any image.  
 Stay tuned for the upcoming updates!
 
