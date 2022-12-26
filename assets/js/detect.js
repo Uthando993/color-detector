@@ -38,6 +38,7 @@ img.addEventListener('mousemove', function(e) {
         pview.style.background = rgbToHex(p[0], p[1], p[2])
     })
 }, false)
+
 function useCanvas(el, img, callback) {
     el.width = img.width
     el.height = img.height
@@ -58,18 +59,4 @@ function componentToHex(c) {
 }
 function rgbToHex(r, g, b) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b)
-}
-function findPos(obj) {
-    var cleft = 0, ctop = 0
-    if (obj.offsetParent) {
-        do {
-            cleft += obj.offsetLeft
-            ctop += obj.offsetTop
-        } while (obj = obj.offsetParent)
-            return {
-            x: cleft,
-            y: ctop
-        }
-    }
-    return undefined
 }
