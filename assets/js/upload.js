@@ -1,8 +1,8 @@
-const file = document.querySelector('#file')
+const file = _('#file')
 file.addEventListener("change", function() {
     const r = new FileReader()
     r.addEventListener("load", () => {
-        document.querySelector("#image").src = r.result
+        _("#image").src = r.result
     })
     r.readAsDataURL(this.files[0])
 })
