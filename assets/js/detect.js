@@ -5,12 +5,10 @@ pview = _('.preview'),
 x = '', y = ''
 
 img.addEventListener('click', function(e) {
-    // chrome
     if (e.offsetX) {
         x = e.offsetX
         y = e.offsetY
     }
-    // firefox
     else if (e.layerX) {
         x = e.layerX
         y = e.layerY
@@ -18,7 +16,6 @@ img.addEventListener('click', function(e) {
     useCanvas(cs, img, function() {
         var p = cs.getContext('2d')
         .getImageData(x, y, 1, 1).data
-        // show result
         res.innerHTML = '<span>HEX: '+rgbToHex(p[0], p[1], p[2])+'</span>'+
         '<span>RGB:  rgb('+
         p[0]+','+
@@ -27,12 +24,10 @@ img.addEventListener('click', function(e) {
     })
 }, false)
 img.addEventListener('mousemove', function(e) {
-    // chrome
     if (e.offsetX) {
         x = e.offsetX
         y = e.offsetY
     }
-    // firefox
     else if (e.layerX) {
         x = e.layerX
         y = e.layerY
@@ -40,7 +35,6 @@ img.addEventListener('mousemove', function(e) {
     useCanvas(cs, img, function() {
         var p = cs.getContext('2d')
         .getImageData(x, y, 1, 1).data
-        // show preview
         pview.style.background = rgbToHex(p[0], p[1], p[2])
     })
 }, false)
