@@ -1,7 +1,7 @@
 var img = _('.pic img'),
-canvas = _('#cs'),
-result = _('.result'),
-preview = _('.preview'),
+cs = _('#cs'),
+res = _('.result'),
+pview = _('.preview'),
 x = '', y = ''
 
 img.addEventListener('click', function(e) {
@@ -15,11 +15,11 @@ img.addEventListener('click', function(e) {
         x = e.layerX
         y = e.layerY
     }
-    useCanvas(canvas, img, function() {
-        var p = canvas.getContext('2d')
+    useCanvas(cs, img, function() {
+        var p = cs.getContext('2d')
         .getImageData(x, y, 1, 1).data
         // show result
-        result.innerHTML = '<span>HEX: '+rgbToHex(p[0], p[1], p[2])+'</span>'+
+        res.innerHTML = '<span>HEX: '+rgbToHex(p[0], p[1], p[2])+'</span>'+
         '<span>RGB:  rgb('+
         p[0]+','+
         p[1]+','+
@@ -37,22 +37,22 @@ img.addEventListener('mousemove', function(e) {
         x = e.layerX
         y = e.layerY
     }
-    useCanvas(canvas, img, function() {
-        var p = canvas.getContext('2d')
+    useCanvas(cs, img, function() {
+        var p = cs.getContext('2d')
         .getImageData(x, y, 1, 1).data
         // show preview
-        preview.style.background = rgbToHex(p[0], p[1], p[2])
+        pview.style.background = rgbToHex(p[0], p[1], p[2])
     })
 }, false)
-function useCanvas(el, image, callback) {
-    el.width = image.width
-    el.height = image.height
+function useCanvas(el, img, callback) {
+    el.width = img.width
+    el.height = img.height
     el.getContext('2d')
-    .drawImage(image,
+    .drawImage(img,
         0,
         0,
-        image.width,
-        image.height)
+        img.width,
+        img.height)
     return callback()
 }
 function _(el) {
@@ -72,7 +72,7 @@ function findPos(obj) {
             cleft += obj.offsetLeft
             ctop += obj.offsetTop
         } while (obj = obj.offsetParent)
-        return {
+            return {
             x: cleft,
             y: ctop
         }
