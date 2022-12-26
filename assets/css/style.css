@@ -19,10 +19,14 @@ body {
     display: block;
     position: relative;
     overflow: hidden;
-    border: 5px solid #4c8eda;
+    cursor: crosshair;
     margin: 0 auto;
+    border: 5px solid #4c8eda;
+    align-items: center;
+    -webkit-align-items: center;
 }
 .pic img {
+    display: block;
     height: 100%;
     cursor: crosshair;
     overflow: hidden;
@@ -37,7 +41,6 @@ body {
 }
 .result span {
     display: block;
-    font-size: 33px;
 }
 .preview {
     display: block;
@@ -65,7 +68,6 @@ body {
     color: #4c8eda;
     border: 5px solid #4c8eda;
     border-radius: 10px;
-    font-size: 40px;
 }
 @media screen and (orientation:portrait){
     .pic {
@@ -75,11 +77,13 @@ body {
         height: 40%;
     }
     .result {
-        bottom: 15%;
+        font-size: 33px;
+        bottom: 19%;
         left: 10%;
         right: 10%;
     }
     .file {
+        font-size: 40px;
         bottom: 35%;
         left: 10%;
         right: 10%;
@@ -95,16 +99,16 @@ body {
         height: 80%;
     }
     .result {
-        font-size: 15px;
+        font-size: 21px;
         left: 55%;
         right: 0%;
-        bottom: 9%;
+        bottom: 30%;
         width: 40%;
     }
     .file {
+        font-size: 30px;
         left: 55%;
-        right: 0%;
-        top: 10%;
-        width: 40%;
+        right: 5%;
+        top: 12%;
     }
 }
