@@ -79,7 +79,7 @@ body {
 }
 @media screen and (orientation:portrait) {
     body {
-        background-image: url('https://uthando993.github.io/color-detector/assets/img/portrait.jpg');
+        background-image: url('https://snehil-pandey.github.io/color-detector/assets/img/portrait.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -102,7 +102,7 @@ body {
 }
 @media screen and (orientation:landscape) {
     body {
-        background-image: url('https://uthando993.github.io/color-detector/assets/img/landscape.jpg');
+        background-image: url('https://snehil-pandey.github.io/color-detector/assets/img/landscape.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
