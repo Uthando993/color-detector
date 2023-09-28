@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-svale=1" />
-    <title>Picker Tool</title>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1">
+
+  <title>Color Detector</title>
+
+  <script src="assets/js/ntc.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div class="pic">
-        <div class="preview"></div>
-        <img id="image" />
-    </div>
-    <input type="file" id="file" accept="image/jpeg, image/png, image/jpg" hidden />
-    <label for="file" class="file">Choose Image</label>
-    <div class="result">
-        <span>HEX: #000000</span>
-        <span>RGB: rgb(00,00,00)</span>
-    </div>
-    <canvas id="cs"></canvas>
+  <div class="pic">
+    <div class="preview"></div>
+    <img id="image" />
+  </div>
+  <input type="file" id="file" accept="image/jpeg, image/png, image/jpg" hidden />
+  <label for="file" class="file">Choose Image</label>
+  <div class="result">
+    <strong>Exact Value:</strong><br>
+    HEX: <span>#000000</span><br>
+    RGB: <span>rgb(00,00,00)</span><br><br>
+    <strong>Nearest Match:</strong><br>
+    NAME: <span>Black</span><br>
+    HEX: <span>#000000</span><br>
+    SAMPLE: <span id="sam">x</span>
+  </div>
+  <canvas id="cs"></canvas>
 </body>
 <script src="assets/js/upload.js" type="text/javascript" charset="utf-8"></script>
 <script src="assets/js/detect.js" type="text/javascript" charset="utf-8"></script>
+
 </html>
