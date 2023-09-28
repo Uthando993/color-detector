@@ -104,7 +104,7 @@ body {
 
 @media screen and (orientation:portrait) {
   body {
-    background-image: url('assets/img/portrait.jpg');
+    background-image: url('/assets/img/portrait.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -131,7 +131,7 @@ body {
 
 @media screen and (orientation:landscape) {
   body {
-    background-image: url('assets/img/landscape.jpg');
+    background-image: url('/assets/img/landscape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
