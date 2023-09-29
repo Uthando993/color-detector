@@ -39,11 +39,26 @@ body {
   display: block;
   height: 94.4%;
   overflow: scroll;
-  scrollbar-width: none;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
+  scrollbar-width: none; /* For Firefox */
+  -webkit-scrollbar-width: none; /* For Chrome and Safari */
+  -moz-scrollbar-width: none; /* For older versions of Firefox */
+  -ms-scrollbar-width: none; /* For Edge */
+
+  scrollbar-color: transparent transparent;
+  -webkit-scrollbar: {
+    width: 0;
+    background: transparent;
+  }
+  -moz-scrollbar: {
+    width: 0;
+    background: transparent;
+  }
+  -ms-scrollbar: {
+    width: 0;
+    background: transparent;
+  }
 }
+
 
 .pic img {
   display: block;
