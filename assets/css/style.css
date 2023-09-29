@@ -43,21 +43,23 @@ body {
   -webkit-scrollbar-width: none; /* For Chrome and Safari */
   -moz-scrollbar-width: none; /* For older versions of Firefox */
   -ms-scrollbar-width: none; /* For Edge */
-
   scrollbar-color: transparent transparent;
-  -webkit-scrollbar: {
-    width: 0;
-    background: transparent;
-  }
-  -moz-scrollbar: {
-    width: 0;
-    background: transparent;
-  }
-  -ms-scrollbar: {
-    width: 0;
-    background: transparent;
-  }
 }
+  .img::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+  .img::-moz-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+  .img::-ms-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
 
 
 .pic img {
